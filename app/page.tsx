@@ -46,11 +46,15 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="flex justify-center md:justify-start">
-              <div
-                className="aspect-[2/3] w-full max-w-xs rounded-lg bg-cream/15 border border-cream/20 flex items-center justify-center text-cream/50 text-sm shadow-2xl"
-                aria-label="Book cover placeholder"
-              >
-                Book cover
+              <div className="relative w-full max-w-xs drop-shadow-[0_16px_32px_rgba(0,0,0,0.45)]">
+                <Image
+                  src="/bridging-the-gap-cover.png"
+                  alt="Bridging the Gap book cover"
+                  width={800}
+                  height={1200}
+                  sizes="(min-width: 768px) 20rem, 80vw"
+                  className="rounded-lg w-full h-auto"
+                />
               </div>
             </div>
             <div>

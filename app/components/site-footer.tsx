@@ -13,13 +13,36 @@ export default function SiteFooter({ variant = "robin" }: SiteFooterProps) {
   return (
     <footer id="contact" className="bg-navy text-cream">
       <div className="mx-auto max-w-6xl px-6 py-14">
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8 text-center md:text-left">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-10 md:gap-8 text-center md:text-left">
           <div>
             <p className="font-serif text-2xl font-semibold">Robin Urban</p>
             <p className="mt-2 text-sm text-cream/70">
               An imprint of{" "}
               <span className="text-gold font-medium">Benchmark Press</span>
             </p>
+          </div>
+          <div>
+            <p className="text-sm font-medium tracking-widest uppercase text-gold mb-4">
+              Explore
+            </p>
+            <ul className="flex flex-col items-center md:items-start gap-3 text-sm">
+              <li>
+                <a
+                  href="/#about"
+                  className="hover:text-gold transition-colors"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="hover:text-gold transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
           <div>
             <p className="text-sm font-medium tracking-widest uppercase text-gold mb-4">

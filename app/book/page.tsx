@@ -25,17 +25,50 @@ export default function BookPage() {
     <>
       <main className="flex-1">
       {/* Page hero */}
-      <section className="mx-auto max-w-4xl px-6 py-8 sm:py-10 text-center">
-        <p className="text-gold font-medium tracking-widest uppercase text-xs">
-          The Book
-        </p>
-        <h1 className="mt-2 font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-navy">
-          Bridging the Gap
-        </h1>
-        <p className="mt-2 font-serif text-base sm:text-lg italic text-navy/70">
-          Between Who God Says You Are and How You Live
-        </p>
-        <p className="mt-3 text-sm sm:text-base text-navy/80">By Robin Urban</p>
+      <section className="mx-auto max-w-6xl px-6 py-12 sm:py-16 lg:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
+          <div className="flex justify-center md:justify-start">
+            <div className="relative w-full max-w-xs sm:max-w-sm drop-shadow-[0_12px_28px_rgba(13,31,60,0.35)]">
+              <Image
+                src="/bridging-the-gap-cover.png"
+                alt="Bridging the Gap book cover"
+                width={800}
+                height={1200}
+                priority
+                sizes="(min-width: 768px) 24rem, 80vw"
+                className="rounded-lg w-full h-auto"
+              />
+            </div>
+          </div>
+          <div className="text-center md:text-left">
+            <p className="text-gold font-medium tracking-widest uppercase text-xs sm:text-sm">
+              The Book
+            </p>
+            <h1 className="mt-2 font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-navy">
+              Bridging the Gap
+            </h1>
+            <p className="mt-2 font-serif text-base sm:text-lg italic text-navy/70">
+              Between Who God Says You Are and How You Live
+            </p>
+            <p className="mt-3 text-sm sm:text-base text-navy/80">
+              By Robin Urban
+            </p>
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <a
+                href="#get-the-book"
+                className="inline-flex items-center justify-center rounded-full bg-navy px-7 py-4 text-base font-medium text-cream shadow-sm hover:bg-gold hover:text-navy transition-colors"
+              >
+                Buy the Book
+              </a>
+              <a
+                href="#get-the-book"
+                className="inline-flex items-center justify-center rounded-full border border-navy/30 px-7 py-4 text-base font-medium text-navy hover:bg-navy hover:text-cream transition-colors"
+              >
+                Get the ePub
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Book feature */}
@@ -43,11 +76,15 @@ export default function BookPage() {
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="flex justify-center md:justify-start">
-              <div
-                className="aspect-[2/3] w-full max-w-xs rounded-lg bg-cream/15 border border-cream/20 flex items-center justify-center text-cream/50 text-sm shadow-2xl"
-                aria-label="Book cover placeholder"
-              >
-                Book cover
+              <div className="relative w-full max-w-xs drop-shadow-[0_16px_32px_rgba(0,0,0,0.45)]">
+                <Image
+                  src="/bridging-the-gap-cover.png"
+                  alt="Bridging the Gap book cover"
+                  width={800}
+                  height={1200}
+                  sizes="(min-width: 768px) 20rem, 80vw"
+                  className="rounded-lg w-full h-auto"
+                />
               </div>
             </div>
             <div>
@@ -89,11 +126,15 @@ export default function BookPage() {
             <div className="flex flex-col gap-5">
               {/* Book cover */}
               <div className="flex justify-center lg:justify-start">
-                <div
-                  className="aspect-[2/3] w-full max-w-[160px] rounded-lg bg-navy/10 border border-navy/15 flex items-center justify-center text-navy/40 text-sm shadow-xl"
-                  aria-label="Book cover placeholder"
-                >
-                  Book cover
+                <div className="relative w-full max-w-[160px] drop-shadow-[0_10px_22px_rgba(13,31,60,0.3)]">
+                  <Image
+                    src="/bridging-the-gap-cover.png"
+                    alt="Bridging the Gap book cover"
+                    width={800}
+                    height={1200}
+                    sizes="160px"
+                    className="rounded-lg w-full h-auto"
+                  />
                 </div>
               </div>
 

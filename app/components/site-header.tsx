@@ -2,9 +2,7 @@ const navLinks = [
   { label: "Book", href: "/book" },
   { label: "Music", href: "/music" },
   { label: "Shop", href: "/#shop" },
-  { label: "About", href: "/#about" },
   { label: "Free Resource", href: "/free" },
-  { label: "Contact", href: "#contact" },
 ];
 
 export default function SiteHeader() {
