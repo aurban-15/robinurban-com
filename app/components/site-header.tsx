@@ -3,7 +3,7 @@ const navLinks = [
   { label: "Music", href: "/music" },
   { label: "Shop", href: "/#shop" },
   { label: "About", href: "/#about" },
-  { label: "Free Resource", href: "/#free-resource" },
+  { label: "Free Resource", href: "/free" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -30,7 +30,7 @@ export default function SiteHeader() {
           ))}
         </ul>
         <a
-          href="/#free-resource"
+          href="/free"
           className="md:hidden text-sm font-medium text-navy underline underline-offset-4 decoration-gold"
         >
           Free Pattern
