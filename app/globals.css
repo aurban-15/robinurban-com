@@ -12,3 +12,19 @@
 body {
   font-family: var(--font-sans);
 }
+
+/* Kit (ConvertKit) form overrides */
+.formkit-form[data-uid="8dd3c60131"] .formkit-background {
+  display: none;
+}
+.formkit-form[data-uid="8dd3c60131"] {
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+.formkit-form[data-uid="8dd3c60131"] .formkit-submit {
+  background-color: #b8974a !important;
+}
+.formkit-form[data-uid="8dd3c60131"] .formkit-column {
+  background-color: white;
+  border-radius: 12px;
+}
