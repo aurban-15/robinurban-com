@@ -35,50 +35,50 @@ export default function FreeResourcePage() {
         </section>
 
         {/* Card Preview + Form */}
-        <section className="max-w-5xl mx-auto px-6 py-16 sm:py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <section className="max-w-6xl mx-auto px-6 py-16 sm:py-20 grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-10 md:gap-14 items-center">
           {/* Left — Card Preview */}
           <div className="relative">
             {/* Shadow card behind */}
-            <div className="absolute top-4 left-4 right-0 bg-navy/60 rounded-xl h-full rotate-2" />
+            <div className="absolute top-5 left-5 right-0 bg-navy/60 rounded-2xl h-full rotate-2" />
             {/* Main card */}
-            <div className="relative bg-navy rounded-xl p-8 shadow-xl">
-              <p className="text-gold text-[10px] tracking-widest uppercase mb-4">
+            <div className="relative bg-navy rounded-2xl p-10 sm:p-12 shadow-2xl">
+              <p className="text-gold text-xs tracking-widest uppercase mb-5">
                 Bridging the Gap
               </p>
-              <h2 className="text-cream font-serif text-2xl font-semibold leading-tight mb-2">
+              <h2 className="text-cream font-serif text-3xl sm:text-4xl font-semibold leading-tight mb-3">
                 The Pattern That
                 <br />
                 Changes Everything
               </h2>
-              <p className="text-cream/65 text-xs mb-6 leading-relaxed">
+              <p className="text-cream/65 text-sm mb-8 leading-relaxed">
                 How the Christian life was designed to work — not through
                 striving, but through receiving.
               </p>
-              <div className="border-t border-gold/20 pt-5 space-y-4">
+              <div className="border-t border-gold/20 pt-6 space-y-5">
                 {steps.map(({ num, label, ref }) => (
-                  <div key={num} className="flex items-center gap-3">
-                    <div className="w-7 h-7 min-w-[28px] rounded-full border border-gold flex items-center justify-center text-gold text-xs font-serif">
+                  <div key={num} className="flex items-center gap-4">
+                    <div className="w-9 h-9 min-w-[36px] rounded-full border border-gold flex items-center justify-center text-gold text-sm font-serif">
                       {num}
                     </div>
                     <div>
-                      <span className="text-cream text-sm font-semibold font-serif">
+                      <span className="text-cream text-base font-semibold font-serif">
                         {label}
                       </span>
-                      <span className="text-cream/65 text-xs ml-2 italic">
+                      <span className="text-cream/65 text-sm ml-2 italic">
                         — {ref}
                       </span>
                     </div>
                   </div>
                 ))}
               </div>
-              <div className="border-t border-gold/20 mt-5 pt-4">
-                <p className="text-gold text-xs italic text-center">
+              <div className="border-t border-gold/20 mt-6 pt-5">
+                <p className="text-gold text-sm italic text-center">
                   This isn&apos;t a formula. It&apos;s how grace actually
                   operates.
                 </p>
               </div>
-              <div className="flex justify-between mt-4">
-                <span className="text-gold/50 text-[10px]">
+              <div className="flex justify-between mt-5">
+                <span className="text-gold/50 text-xs">
                   robinurban.com
                 </span>
               </div>
