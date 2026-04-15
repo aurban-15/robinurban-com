@@ -19,7 +19,7 @@ export default function Home() {
             </p>
             <div className="mt-8">
               <a
-                href="#free-resource"
+                href="/free"
                 className="inline-flex items-center justify-center rounded-full bg-navy px-7 py-4 text-base font-medium text-cream shadow-sm hover:bg-gold hover:text-navy transition-colors"
               >
                 Get the Free Pattern Card
@@ -115,66 +115,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Email signup */}
-      <section
-        id="free-resource"
-        className="bg-gold/15 border-y border-gold/30"
-      >
+      {/* Free resource CTA */}
+      <section className="bg-gold/15 border-y border-gold/30">
         <div className="mx-auto max-w-3xl px-6 py-20 sm:py-24 text-center">
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy">
             Get the Free Pattern Card
           </h2>
           <p className="mt-4 text-lg text-navy/80 leading-relaxed max-w-xl mx-auto">
             A simple printable card with the daily pattern Robin uses to
-            stay anchored in who God says she is. Enter your details and
+            stay anchored in who God says she is. Download it free and
             we&apos;ll send it straight to your inbox.
           </p>
-          <form
-            action="#"
-            method="post"
-            className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 text-left"
-          >
-            <div className="sm:col-span-1">
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-navy mb-2"
-              >
-                First name
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                className="w-full rounded-md border border-navy/20 bg-cream px-4 py-3 text-navy placeholder:text-navy/40 focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold"
-                placeholder="Jane"
-              />
-            </div>
-            <div className="sm:col-span-1">
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-navy mb-2"
-              >
-                Email address
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                className="w-full rounded-md border border-navy/20 bg-cream px-4 py-3 text-navy placeholder:text-navy/40 focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold"
-                placeholder="jane@example.com"
-              />
-            </div>
-            <div className="sm:col-span-2 flex justify-center mt-2">
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center rounded-full bg-navy px-8 py-4 text-base font-medium text-cream hover:bg-gold hover:text-navy transition-colors"
-              >
-                Send Me the Card
-              </button>
-            </div>
-          </form>
+          <div className="mt-10">
+            <a
+              href="/free"
+              className="inline-flex items-center justify-center rounded-full bg-navy px-8 py-4 text-base font-medium text-cream hover:bg-gold hover:text-navy transition-colors"
+            >
+              Get the Free Pattern Card
+            </a>
+          </div>
         </div>
       </section>
       </main>
