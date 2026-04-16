@@ -61,10 +61,10 @@ export default function BookPage() {
                 Buy the Book
               </a>
               <a
-                href="#get-the-book"
+                href="/introduction"
                 className="inline-flex items-center justify-center rounded-full border border-navy/30 px-7 py-4 text-base font-medium text-navy hover:bg-navy hover:text-cream transition-colors"
               >
-                Get the ePub
+                Read the Introduction
               </a>
             </div>
           </div>
@@ -116,10 +116,7 @@ export default function BookPage() {
       </section>
 
       {/* Get the Book + What's Inside */}
-      <section
-        id="get-the-book"
-        className="bg-gold/15 border-y border-gold/30"
-      >
+      <section id="get-the-book">
         <div className="mx-auto max-w-7xl px-6 py-10 sm:py-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Left column: cover + purchase options */}
@@ -239,27 +236,6 @@ export default function BookPage() {
         </div>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="bg-navy text-cream">
-        <div className="mx-auto max-w-3xl px-6 py-20 sm:py-24 text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold">
-            Ready to bridge the gap?
-          </h2>
-          <p className="mt-4 text-lg text-cream/80 leading-relaxed">
-            Start with the free Pattern Card and see the truth at work in
-            your everyday life.
-          </p>
-          <div className="mt-10">
-            <a
-              href="/free"
-              className="inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-base font-medium text-navy hover:bg-cream transition-colors"
-            >
-              Get the Free Pattern Card
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Music intro */}
       <section className="bg-gold/15 border-y border-gold/30">
         <div className="mx-auto max-w-5xl px-6 py-16 sm:py-20">
@@ -304,6 +280,7 @@ export default function BookPage() {
           </div>
         </div>
       </section>
+
       </main>
       <SiteFooter />
     </>

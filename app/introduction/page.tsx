@@ -287,21 +287,14 @@ export default function IntroductionPage() {
               Keep reading
             </h2>
             <p className="mt-4 text-base text-navy/75 leading-relaxed max-w-md mx-auto">
-              Get the full book, or start with the free Pattern Card — a
-              one-page reference to Hear, Believe, Speak, Receive.
+              Get the full book and read the whole story.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-8 flex justify-center">
               <a
-                href="/book"
+                href="/book#get-the-book"
                 className="inline-flex items-center justify-center rounded-full bg-navy px-8 py-4 text-base font-medium text-cream hover:bg-gold hover:text-navy transition-colors"
               >
                 Get the Book
-              </a>
-              <a
-                href="/free"
-                className="inline-flex items-center justify-center rounded-full border border-navy/30 px-8 py-4 text-base font-medium text-navy hover:bg-navy hover:text-cream transition-colors"
-              >
-                Get the Free Pattern Card
               </a>
             </div>
           </section>
