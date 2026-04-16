@@ -28,7 +28,7 @@ export default function SiteFooter({ variant = "robin" }: SiteFooterProps) {
             <ul className="flex flex-col items-center md:items-start gap-3 text-sm">
               <li>
                 <a
-                  href="/#about"
+                  href="/about"
                   className="hover:text-gold transition-colors"
                 >
                   About
@@ -36,7 +36,7 @@ export default function SiteFooter({ variant = "robin" }: SiteFooterProps) {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="hover:text-gold transition-colors"
                 >
                   Contact

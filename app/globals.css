@@ -13,6 +13,13 @@ body {
   font-family: var(--font-sans);
 }
 
+/* Contact form focus states */
+.contact-input:focus {
+  border-color: #b8974a;
+  outline: 2px solid rgba(184, 151, 74, 0.3);
+  outline-offset: 0px;
+}
+
 /* Kit (ConvertKit) form overrides */
 .formkit-form[data-uid="8dd3c60131"] .formkit-background {
   display: none !important;
