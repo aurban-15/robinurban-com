@@ -1,7 +1,6 @@
 const navLinks = [
   { label: "Book", href: "/book" },
   { label: "Music", href: "/music" },
-  { label: "Shop", href: "/#shop" },
   { label: "Free Resource", href: "/free" },
 ];
 

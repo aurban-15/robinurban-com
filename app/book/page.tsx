@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Script from "next/script";
 import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ const chapters = [
 export default function BookPage() {
   return (
     <>
+      <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="afterInteractive" />
       <main className="flex-1">
       {/* Page hero */}
       <section className="mx-auto max-w-6xl px-6 py-12 sm:py-16 lg:py-20">
@@ -117,7 +119,7 @@ export default function BookPage() {
 
       {/* Get the Book + What's Inside */}
       <section id="get-the-book">
-        <div className="mx-auto max-w-7xl px-6 py-10 sm:py-12">
+        <div className="mx-auto max-w-7xl px-6 pt-10 sm:pt-12 pb-6 sm:pb-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Left column: cover + purchase options */}
             <div className="flex flex-col gap-5">
@@ -153,8 +155,8 @@ export default function BookPage() {
                       <p className="text-navy/70 text-sm">$9.99</p>
                     </div>
                     <a
-                      href="#"
-                      className="inline-flex items-center justify-center rounded-full bg-navy px-5 py-2 text-sm font-medium text-cream hover:bg-gold hover:text-navy transition-colors whitespace-nowrap"
+                      href="https://robinurban.lemonsqueezy.com/checkout/buy/1588167"
+                      className="lemonsqueezy-button inline-flex items-center justify-center rounded-full bg-navy px-5 py-2 text-sm font-medium text-cream hover:bg-gold hover:text-navy transition-colors whitespace-nowrap"
                     >
                       Buy Now
                     </a>
@@ -176,7 +178,7 @@ export default function BookPage() {
                 </ul>
 
                 <p className="mt-3 text-sm text-navy/60 italic">
-                  Delivered instantly via Gumroad.
+                  Delivered instantly via Lemon Squeezy.
                 </p>
               </div>
 
@@ -231,6 +233,33 @@ export default function BookPage() {
                   </li>
                 ))}
               </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Also Available At */}
+      <section>
+        <div className="mx-auto max-w-7xl px-6 pb-14 sm:pb-16">
+          <div className="border-t border-navy/10 pt-8">
+            <p className="text-center text-xs font-medium tracking-widest uppercase text-navy/40">
+              Also Available At
+            </p>
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+              <a
+                href="https://www.amazon.com/dp/B0GXSF52DB"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-navy/20 px-5 py-2 text-sm font-medium text-navy/60 hover:border-navy/40 hover:text-navy transition-colors"
+              >
+                Amazon
+              </a>
+              <span
+                className="inline-flex items-center justify-center rounded-full border border-navy/10 px-5 py-2 text-sm font-medium text-navy/25 cursor-not-allowed select-none"
+                title="Coming soon"
+              >
+                Barnes &amp; Noble
+              </span>
             </div>
           </div>
         </div>

@@ -75,16 +75,16 @@ export default function Home() {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <a
-                  href="/book"
+                  href="/introduction"
                   className="inline-flex items-center justify-center rounded-full bg-gold px-7 py-4 text-base font-medium text-navy hover:bg-cream transition-colors"
                 >
-                  Buy the Book
+                  Read the Introduction
                 </a>
                 <a
                   href="/book"
                   className="inline-flex items-center justify-center rounded-full border border-cream/40 px-7 py-4 text-base font-medium text-cream hover:bg-cream hover:text-navy transition-colors"
                 >
-                  Get the ePub
+                  Learn More
                 </a>
               </div>
             </div>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Script from "next/script";
 import SiteFooter from "../components/site-footer";
+import TrackList from "./track-list";
 
 export const metadata: Metadata = {
   title: "Bridging the Gap — Threshold Worship",
@@ -8,21 +10,23 @@ export const metadata: Metadata = {
     "Bridging the Gap, the worship album from Threshold Worship. A complete worship journey through the finished work of Christ.",
 };
 
-const tracks = [
-  "Nothing Between",
-  "We Are Not Far",
-  "We Are Not Far (Acoustic)",
-  "You Have Always Been",
-  "You Have Always Been (Hymn)",
-  "Come Near",
-  "Here I Am (Acoustic)",
-  "Here I Am",
-  "The Cross Has Spoken",
+// `sample` is a path inside /public, served at the root.
+const tracks: { title: string; sample?: string }[] = [
+  { title: "Nothing Between",            sample: "/audio/samples/01-nothing-between.mp3" },
+  { title: "We Are Not Far",             sample: "/audio/samples/02-We-Are-Not-Far.mp3" },
+  { title: "We Are Not Far (Acoustic)",  sample: "/audio/samples/03-We-Are-Not-Far-(Acoustic).mp3" },
+  { title: "You Have Always Been",       sample: "/audio/samples/04-You-Have-Always-Been.mp3" },
+  { title: "You Have Always Been (Hymn)",sample: "/audio/samples/05-You-Have-Always-Been-(Hymn).mp3" },
+  { title: "Come Near",                  sample: "/audio/samples/06-Come-Near.mp3" },
+  { title: "Here I Am (Acoustic)",       sample: "/audio/samples/07-Here-I-Am-(Acoustic).mp3" },
+  { title: "Here I Am",                  sample: "/audio/samples/08-Here-I-Am.mp3" },
+  { title: "The Cross Has Spoken",       sample: "/audio/samples/09-The-Cross-Has-Spoken.mp3" },
 ];
 
 export default function MusicPage() {
   return (
     <>
+      <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="afterInteractive" />
       <main className="flex-1">
         {/* Page hero */}
         <section className="mx-auto max-w-6xl px-6 py-12 sm:py-16 lg:py-20">
@@ -86,21 +90,7 @@ export default function MusicPage() {
             </h2>
           </div>
 
-          <ol className="mt-10 space-y-3">
-            {tracks.map((title, i) => (
-              <li
-                key={title}
-                className="flex items-center gap-5 rounded-xl border border-navy/10 bg-cream/70 px-5 sm:px-6 py-4 hover:border-gold/50 transition-colors"
-              >
-                <span className="font-serif text-2xl sm:text-3xl text-gold font-semibold w-10 shrink-0 tabular-nums">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="font-serif text-lg sm:text-xl text-navy leading-snug">
-                  {title}
-                </span>
-              </li>
-            ))}
-          </ol>
+          <TrackList tracks={tracks} />
         </section>
 
         {/* Stream or Download */}
@@ -140,7 +130,7 @@ export default function MusicPage() {
                     href="#"
                     className="inline-flex w-full items-center justify-center rounded-full border border-navy/30 px-6 py-4 text-base font-medium text-navy hover:bg-navy hover:text-cream transition-colors"
                   >
-                    Listen on Apple Music
+                    Listen on Pandora
                   </a>
                 </div>
 
@@ -163,27 +153,18 @@ export default function MusicPage() {
 
                 <div className="mt-8 flex-1 flex flex-col gap-4">
                   <a
-                    href="#"
-                    className="inline-flex w-full flex-col items-center justify-center rounded-full bg-navy px-6 py-3.5 text-base font-medium text-cream hover:bg-gold hover:text-navy transition-colors"
+                    href="https://robinurban.lemonsqueezy.com/checkout/buy/1588214"
+                    className="lemonsqueezy-button inline-flex w-full flex-col items-center justify-center rounded-full bg-navy px-6 py-3.5 text-base font-medium text-cream hover:bg-gold hover:text-navy transition-colors"
                   >
                     <span>Download Full Album</span>
                     <span className="text-xs font-normal opacity-80">
                       $9.99
                     </span>
                   </a>
-                  <a
-                    href="#"
-                    className="inline-flex w-full flex-col items-center justify-center rounded-full border border-navy/30 px-6 py-3.5 text-base font-medium text-navy hover:bg-navy hover:text-cream transition-colors"
-                  >
-                    <span>Download Individual Tracks</span>
-                    <span className="text-xs font-normal opacity-80">
-                      $1.50 each
-                    </span>
-                  </a>
                 </div>
 
                 <p className="mt-8 text-sm text-navy/60 italic">
-                  Highest quality audio, delivered instantly via Gumroad.
+                  Highest quality audio, delivered instantly via Lemon Squeezy.
                 </p>
               </div>
             </div>

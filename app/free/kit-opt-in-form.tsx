@@ -1,106 +1,140 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import Script from "next/script";
+
+// Kit form configuration (from the form's Publish → Embed code).
+// Re-paste the embed's data-options string if anything about the form's
+// post-subscribe behavior, analytics, or modal settings changes in Kit.
+const DATA_OPTIONS = JSON.stringify({
+  settings: {
+    after_subscribe: {
+      action: "message",
+      success_message:
+        "You're in! Check your inbox -- the Pattern Card is on its way.",
+      redirect_url: "",
+    },
+    analytics: {
+      google: null,
+      fathom: null,
+      facebook: null,
+      segment: null,
+      pinterest: null,
+      sparkloop: null,
+      googletagmanager: null,
+    },
+    modal: {
+      trigger: "timer",
+      scroll_percentage: null,
+      timer: 5,
+      devices: "all",
+      show_once_every: 15,
+    },
+    powered_by: {
+      show: true,
+      url: "https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic",
+    },
+    recaptcha: { enabled: false },
+    // "show" keeps the form rendering even for people who've previously subscribed
+    // in this browser. Kit's embed default is "hide" — change back once in production
+    // if you'd rather not re-pitch the card to existing subscribers.
+    return_visitor: { action: "show", custom_content: "" },
+    slide_in: {
+      display_in: "bottom_right",
+      trigger: "timer",
+      scroll_percentage: null,
+      timer: 5,
+      devices: "all",
+      show_once_every: 15,
+    },
+    sticky_bar: {
+      display_in: "top",
+      trigger: "timer",
+      scroll_percentage: null,
+      timer: 5,
+      devices: "all",
+      show_once_every: 15,
+    },
+  },
+  version: "5",
+});
 
 export default function KitOptInForm() {
-  const [status, setStatus] = useState<
-    "idle" | "submitting" | "success" | "error"
-  >("idle");
-
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setStatus("submitting");
-
-    const form = e.currentTarget;
-
-    try {
-      const res = await fetch(
-        "https://app.kit.com/forms/9328458/subscriptions",
-        {
-          method: "POST",
-          body: new FormData(form),
-          headers: {
-            Accept: "application/json",
-          },
-        }
-      );
-
-      if (res.ok) {
-        setStatus("success");
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    }
-  }
-
-  if (status === "success") {
-    return (
-      <div className="rounded-lg bg-cream border border-gold/40 px-6 py-8 text-center">
-        <p className="font-serif text-xl font-semibold text-navy mb-2">
-          You&apos;re in!
-        </p>
-        <p className="text-navy/75 leading-relaxed">
-          Check your inbox &mdash; the Pattern Card is on its way.
-        </p>
-      </div>
-    );
-  }
-
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <div>
-        <label
-          htmlFor="first_name"
-          className="block text-sm font-medium text-navy mb-1"
-        >
-          First Name
-        </label>
-        <input
-          type="text"
-          id="first_name"
-          name="fields[first_name]"
-          required
-          className="w-full rounded-lg border border-navy/15 bg-cream px-4 py-2.5 text-navy placeholder:text-navy/40 contact-input transition-colors"
-        />
-      </div>
-
-      <div>
-        <label
-          htmlFor="email_address"
-          className="block text-sm font-medium text-navy mb-1"
-        >
-          Email
-        </label>
-        <input
-          type="email"
-          id="email_address"
-          name="email_address"
-          required
-          className="w-full rounded-lg border border-navy/15 bg-cream px-4 py-2.5 text-navy placeholder:text-navy/40 contact-input transition-colors"
-        />
-      </div>
-
-      {status === "error" && (
-        <p className="text-sm text-red-700 bg-red-50 border border-red-200 rounded-lg px-4 py-3">
-          Something went wrong. Please try again.
-        </p>
-      )}
-
-      <button
-        type="submit"
-        disabled={status === "submitting"}
-        className="w-full rounded-full bg-gold px-8 py-3 text-base font-medium text-navy hover:bg-navy hover:text-cream transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+    <>
+      <Script
+        src="https://f.convertkit.com/ckjs/ck.5.js"
+        strategy="afterInteractive"
+      />
+      <form
+        action="https://app.kit.com/forms/9328458/subscriptions"
+        className="seva-form formkit-form"
+        method="post"
+        data-sv-form="9328458"
+        data-uid="8dd3c60131"
+        data-format="inline"
+        data-version="5"
+        data-options={DATA_OPTIONS}
       >
-        {status === "submitting"
-          ? "Sending\u2026"
-          : "Send me the Pattern Card \u2192"}
-      </button>
-
-      <p className="text-center text-sm text-navy/50">
-        No spam, ever. Unsubscribe anytime.
-      </p>
-    </form>
+        <div data-style="full">
+          <div
+            data-element="column"
+            className="formkit-background"
+            aria-hidden="true"
+          />
+          <div data-element="column" className="formkit-column">
+            <div className="formkit-header" data-element="header">
+              <h2>The Pattern That Changes Everything</h2>
+            </div>
+            <ul
+              className="formkit-alert formkit-alert-error"
+              data-element="errors"
+              data-group="alert"
+            />
+            <div
+              data-element="fields"
+              className="seva-fields formkit-fields space-y-4"
+            >
+              <div className="formkit-field">
+                <input
+                  className="formkit-input"
+                  name="fields[first_name]"
+                  aria-label="First Name"
+                  placeholder="First Name"
+                  required
+                  type="text"
+                />
+              </div>
+              <div className="formkit-field">
+                <input
+                  className="formkit-input"
+                  name="email_address"
+                  aria-label="Email Address"
+                  placeholder="Email Address"
+                  required
+                  type="email"
+                />
+              </div>
+              <button
+                data-element="submit"
+                className="formkit-submit formkit-submit"
+              >
+                <div className="formkit-spinner">
+                  <div />
+                  <div />
+                  <div />
+                </div>
+                <span>Send me the Pattern Card &rarr;</span>
+              </button>
+            </div>
+            <div
+              className="formkit-disclaimer"
+              data-element="disclaimer"
+            >
+              No spam, ever. Unsubscribe anytime.
+            </div>
+          </div>
+        </div>
+      </form>
+    </>
   );
 }
