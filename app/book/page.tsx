@@ -156,6 +156,8 @@ export default function BookPage() {
                     </div>
                     <a
                       href="https://robinurban.lemonsqueezy.com/checkout/buy/1588167"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="lemonsqueezy-button inline-flex items-center justify-center rounded-full bg-navy px-5 py-2 text-sm font-medium text-cream hover:bg-gold hover:text-navy transition-colors whitespace-nowrap"
                     >
                       Buy Now
@@ -169,8 +171,10 @@ export default function BookPage() {
                       <p className="text-navy/70 text-sm">$9.99</p>
                     </div>
                     <a
-                      href="#"
-                      className="inline-flex items-center justify-center rounded-full bg-navy px-5 py-2 text-sm font-medium text-cream hover:bg-gold hover:text-navy transition-colors whitespace-nowrap"
+                      href="https://robinurban.lemonsqueezy.com/checkout/buy/1620554"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="lemonsqueezy-button inline-flex items-center justify-center rounded-full bg-navy px-5 py-2 text-sm font-medium text-cream hover:bg-gold hover:text-navy transition-colors whitespace-nowrap"
                     >
                       Buy Now
                     </a>
@@ -194,13 +198,18 @@ export default function BookPage() {
                   Hold the book in your hands. A beautifully printed edition,
                   ready to read, underline, and share.
                 </p>
-                <div className="mt-3">
+                <div className="mt-3 flex flex-col sm:flex-row gap-3">
                   <a
-                    href="#"
+                    href="https://www.lulu.com/shop/robin-urban/bridging-the-gap/paperback/product-rm42qp4.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-navy px-6 py-2.5 text-base font-medium text-cream hover:bg-gold hover:text-navy transition-colors"
                   >
-                    Order Print Edition
+                    Order Paperback Edition
                   </a>
+                  <span className="inline-flex w-full sm:w-auto items-center justify-center rounded-full border border-navy/10 px-6 py-2.5 text-base font-medium text-navy/25 cursor-not-allowed select-none">
+                    Hardcover — Coming Soon
+                  </span>
                 </div>
                 <p className="mt-3 text-sm text-navy/60 italic">
                   Print orders fulfilled by our publishing partner. Ships
@@ -254,12 +263,14 @@ export default function BookPage() {
               >
                 Amazon
               </a>
-              <span
-                className="inline-flex items-center justify-center rounded-full border border-navy/10 px-5 py-2 text-sm font-medium text-navy/25 cursor-not-allowed select-none"
-                title="Coming soon"
+              <a
+                href="https://www.barnesandnoble.com/w/bridging-the-gap-robin-urban/1150098912"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-navy/20 px-5 py-2 text-sm font-medium text-navy/60 hover:border-navy/40 hover:text-navy transition-colors"
               >
                 Barnes &amp; Noble
-              </span>
+              </a>
             </div>
           </div>
         </div>

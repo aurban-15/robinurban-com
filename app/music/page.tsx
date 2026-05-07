@@ -121,13 +121,17 @@ export default function MusicPage() {
 
                 <div className="mt-8 flex-1 flex flex-col gap-4">
                   <a
-                    href="#"
+                    href="https://open.spotify.com/album/6C4MyJJkgeP5vtaeDAVhvB"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex w-full items-center justify-center rounded-full bg-navy px-6 py-4 text-base font-medium text-cream hover:bg-gold hover:text-navy transition-colors"
                   >
                     Listen on Spotify
                   </a>
                   <a
-                    href="#"
+                    href="https://www.pandora.com/artist/threshold-worship/bridging-the-gap/ALqh2bZKVkhnv6J"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex w-full items-center justify-center rounded-full border border-navy/30 px-6 py-4 text-base font-medium text-navy hover:bg-navy hover:text-cream transition-colors"
                   >
                     Listen on Pandora
@@ -154,6 +158,8 @@ export default function MusicPage() {
                 <div className="mt-8 flex-1 flex flex-col gap-4">
                   <a
                     href="https://robinurban.lemonsqueezy.com/checkout/buy/1588214"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="lemonsqueezy-button inline-flex w-full flex-col items-center justify-center rounded-full bg-navy px-6 py-3.5 text-base font-medium text-cream hover:bg-gold hover:text-navy transition-colors"
                   >
                     <span>Download Full Album</span>
