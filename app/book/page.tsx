@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Script from "next/script";
 import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
@@ -24,7 +23,6 @@ const chapters = [
 export default function BookPage() {
   return (
     <>
-      <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="afterInteractive" />
       <main className="flex-1">
       {/* Page hero */}
       <section className="mx-auto max-w-6xl px-6 py-12 sm:py-16 lg:py-20">
@@ -147,33 +145,15 @@ export default function BookPage() {
                 </h3>
 
                 <ul className="mt-4 space-y-3">
-                  <li className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-navy/10 pb-3">
-                    <div>
-                      <p className="font-serif text-lg font-semibold text-navy">
-                        PDF Edition
-                      </p>
-                      <p className="text-navy/70 text-sm">$9.99</p>
-                    </div>
-                    <a
-                      href="https://robinurban.lemonsqueezy.com/checkout/buy/1588167"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="lemonsqueezy-button inline-flex items-center justify-center rounded-full bg-navy px-5 py-2 text-sm font-medium text-cream hover:bg-gold hover:text-navy transition-colors whitespace-nowrap"
-                    >
-                      Buy Now
-                    </a>
-                  </li>
                   <li className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                     <div>
                       <p className="font-serif text-lg font-semibold text-navy">
-                        ePub Edition
+                        PDF or ePub
                       </p>
                       <p className="text-navy/70 text-sm">$9.99</p>
                     </div>
                     <a
-                      href="https://robinurban.lemonsqueezy.com/checkout/buy/1620554"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="https://robinurban.lemonsqueezy.com/checkout/buy/39d6c727-05d3-4be2-a56b-fd8febae489a"
                       className="lemonsqueezy-button inline-flex items-center justify-center rounded-full bg-navy px-5 py-2 text-sm font-medium text-cream hover:bg-gold hover:text-navy transition-colors whitespace-nowrap"
                     >
                       Buy Now

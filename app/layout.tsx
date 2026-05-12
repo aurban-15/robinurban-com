@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Lora, Inter } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "./components/site-header";
@@ -32,6 +33,7 @@ export default function RootLayout({
       className={`${lora.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-navy">
+        <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="afterInteractive" />
         <SiteHeader />
         {children}
       </body>

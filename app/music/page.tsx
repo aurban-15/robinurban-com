@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Script from "next/script";
 import SiteFooter from "../components/site-footer";
 import TrackList from "./track-list";
 
@@ -26,7 +25,6 @@ const tracks: { title: string; sample?: string }[] = [
 export default function MusicPage() {
   return (
     <>
-      <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="afterInteractive" />
       <main className="flex-1">
         {/* Page hero */}
         <section className="mx-auto max-w-6xl px-6 py-12 sm:py-16 lg:py-20">
@@ -157,9 +155,7 @@ export default function MusicPage() {
 
                 <div className="mt-8 flex-1 flex flex-col gap-4">
                   <a
-                    href="https://robinurban.lemonsqueezy.com/checkout/buy/1588214"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="https://robinurban.lemonsqueezy.com/checkout/buy/ebbbba61-d5b8-41f8-87d2-bc53f9450c17"
                     className="lemonsqueezy-button inline-flex w-full flex-col items-center justify-center rounded-full bg-navy px-6 py-3.5 text-base font-medium text-cream hover:bg-gold hover:text-navy transition-colors"
                   >
                     <span>Download Full Album</span>
