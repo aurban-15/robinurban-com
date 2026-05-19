@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Lora, Inter } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "./components/site-header";
@@ -37,6 +38,7 @@ export default function RootLayout({
         <SiteHeader />
         {children}
       </body>
+      <GoogleAnalytics gaId="G-3M6405K7XD" />
     </html>
   );
 }
