@@ -187,9 +187,14 @@ export default function BookPage() {
                   >
                     Order Paperback Edition
                   </a>
-                  <span className="inline-flex w-full sm:w-auto items-center justify-center rounded-full border border-navy/10 px-6 py-2.5 text-base font-medium text-navy/25 cursor-not-allowed select-none">
-                    Hardcover — Coming Soon
-                  </span>
+                  <a
+                    href="https://www.lulu.com/shop/robin-urban/bridging-the-gap-hardcover/hardcover/product-jem877y.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-navy px-6 py-2.5 text-base font-medium text-cream hover:bg-gold hover:text-navy transition-colors"
+                  >
+                    Order Hardcover Edition
+                  </a>
                 </div>
                 <p className="mt-3 text-sm text-navy/60 italic">
                   Print orders fulfilled by our publishing partner. Ships
