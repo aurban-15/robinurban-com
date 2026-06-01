@@ -18,9 +18,33 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Robin Urban — Bridging the Gap",
+  metadataBase: new URL("https://robinurban.com"),
+  title: {
+    default: "Robin Urban — Bridging the Gap",
+    template: "%s | Robin Urban",
+  },
   description:
     "Author Robin Urban. Bridging the Gap: Between Who God Says You Are and How You Live.",
+  openGraph: {
+    type: "website",
+    siteName: "Robin Urban",
+    locale: "en_US",
+    images: [
+      {
+        url: "/bridging-the-gap-cover.png",
+        width: 800,
+        height: 1200,
+        alt: "Bridging the Gap by Robin Urban",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

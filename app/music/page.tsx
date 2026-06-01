@@ -7,6 +7,21 @@ export const metadata: Metadata = {
   title: "Bridging the Gap — Threshold Worship",
   description:
     "Bridging the Gap, the worship album from Threshold Worship. A complete worship journey through the finished work of Christ.",
+  alternates: { canonical: "/music" },
+  openGraph: {
+    title: "Bridging the Gap — Threshold Worship",
+    description:
+      "A complete worship journey through the finished work of Christ.",
+    url: "/music",
+    images: [
+      {
+        url: "/bridging-the-gap-album-cover.jpeg",
+        width: 1200,
+        height: 1200,
+        alt: "Bridging the Gap album cover — Threshold Worship",
+      },
+    ],
+  },
 };
 
 // `sample` is a path inside /public, served at the root.

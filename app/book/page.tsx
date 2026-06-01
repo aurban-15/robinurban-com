@@ -3,9 +3,16 @@ import Image from "next/image";
 import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
-  title: "Bridging the Gap — Robin Urban",
+  title: "Bridging the Gap",
   description:
     "Bridging the Gap: Between Who God Says You Are and How You Live. By Robin Urban.",
+  alternates: { canonical: "/book" },
+  openGraph: {
+    title: "Bridging the Gap — The Book",
+    description:
+      "Between Who God Says You Are and How You Live. By Robin Urban.",
+    url: "/book",
+  },
 };
 
 const chapters = [

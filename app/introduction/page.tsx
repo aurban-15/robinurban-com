@@ -2,9 +2,16 @@ import type { Metadata } from "next";
 import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
-  title: "Introduction — Bridging the Gap — Robin Urban",
+  title: "Introduction — Bridging the Gap",
   description:
     "Read the introduction to Bridging the Gap: The Question Every Believer Asks. A free, inline reading experience.",
+  alternates: { canonical: "/introduction" },
+  openGraph: {
+    title: "Introduction — Bridging the Gap",
+    description:
+      "The Question Every Believer Asks. Read the introduction free.",
+    url: "/introduction",
+  },
 };
 
 type Block =

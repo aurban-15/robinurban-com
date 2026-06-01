@@ -3,9 +3,16 @@ import SiteFooter from "../components/site-footer";
 import KitOptInForm from "./kit-opt-in-form";
 
 export const metadata: Metadata = {
-  title: "Free Pattern Card — Robin Urban",
+  title: "Free Pattern Card",
   description:
     "Download the free Pattern Card: Hear, Believe, Speak, Receive. The four-step pattern at the heart of Bridging the Gap.",
+  alternates: { canonical: "/free" },
+  openGraph: {
+    title: "Free Pattern Card — Robin Urban",
+    description:
+      "Hear, Believe, Speak, Receive. The four-step pattern at the heart of Bridging the Gap.",
+    url: "/free",
+  },
 };
 
 const steps = [

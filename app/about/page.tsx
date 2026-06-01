@@ -3,9 +3,16 @@ import Image from "next/image";
 import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
-  title: "About — Robin Urban",
+  title: "About",
   description:
     "Robin Urban is a Christian nonfiction author and teaching team member at Foundation Stone Church in Toledo, Ohio.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About Robin Urban",
+    description:
+      "Christian nonfiction author and teaching team member at Foundation Stone Church in Toledo, Ohio.",
+    url: "/about",
+  },
 };
 
 export default function AboutPage() {
