@@ -7,24 +7,24 @@ export default function Home() {
     <>
       <main className="flex-1">
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-6 py-16 sm:py-24 lg:py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <section className="mx-auto max-w-6xl px-6 py-12 sm:py-16 lg:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div className="order-2 lg:order-1">
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight text-navy">
               Bridging the gap between who God says you are and how you live.
             </h1>
-            <p className="mt-6 text-lg sm:text-xl text-navy/80 leading-relaxed max-w-xl">
+            <p className="mt-4 text-lg sm:text-xl text-navy/80 leading-relaxed max-w-xl">
               Encouragement, stories, and practical tools from author Robin
               Urban to help you close the distance between belief and
               everyday life.
             </p>
-            <div className="mt-8 max-w-lg">
+            <div className="mt-6 max-w-lg">
               <p className="text-sm text-navy/60 mb-2">
                 Get the free Pattern Card — straight to your inbox.
               </p>
               <HeroOptInForm />
             </div>
-            <div className="mt-4">
+            <div className="mt-3">
               <a
                 href="/teaching"
                 className="inline-flex items-center gap-2 text-gold font-medium underline underline-offset-4 decoration-gold/50 decoration-2 hover:text-navy transition-colors"
