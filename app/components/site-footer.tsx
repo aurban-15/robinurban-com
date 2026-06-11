@@ -16,10 +16,6 @@ export default function SiteFooter({ variant = "robin" }: SiteFooterProps) {
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-10 md:gap-8 text-center md:text-left">
           <div>
             <p className="font-serif text-2xl font-semibold">Robin Urban</p>
-            <p className="mt-2 text-sm text-cream/70">
-              An imprint of{" "}
-              <span className="text-gold font-medium">Benchmark Press</span>
-            </p>
           </div>
           <div>
             <p className="text-sm font-medium tracking-widest uppercase text-gold mb-4">

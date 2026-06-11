@@ -61,6 +61,64 @@ body {
 .formkit-form[data-uid="8dd3c60131"] .formkit-powered-by-convertkit-container {
   opacity: 0.5;
 }
+
+/* Hero inline Kit form */
+.hero-kit-form .formkit-background { display: none !important; }
+.hero-kit-form { box-shadow: none !important; background: transparent !important; max-width: 100% !important; min-width: 0 !important; }
+.hero-kit-form .formkit-header { display: none !important; }
+.hero-kit-form .formkit-column { background: transparent !important; border-radius: 0 !important; padding: 0 !important; }
+.hero-kit-form .formkit-powered-by-convertkit-container { display: none !important; }
+.hero-kit-form .formkit-disclaimer { display: none !important; }
+.hero-kit-form .hero-kit-fields {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.75rem !important;
+}
+@media (min-width: 640px) {
+  .hero-kit-form .hero-kit-fields {
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+}
+.hero-kit-form .hero-kit-input-wrap { flex: 1 !important; min-width: 0 !important; }
+.hero-kit-input {
+  width: 100% !important;
+  border: 1px solid rgba(13, 31, 60, 0.2) !important;
+  border-radius: 9999px !important;
+  padding: 12px 18px !important;
+  font-size: 0.95rem !important;
+  background: #fff !important;
+  color: #0d1f3c !important;
+}
+.hero-kit-input::placeholder { color: rgba(13, 31, 60, 0.45) !important; }
+.hero-kit-input:focus {
+  border-color: #b8974a !important;
+  outline: 2px solid rgba(184, 151, 74, 0.3) !important;
+  outline-offset: 0 !important;
+}
+.hero-kit-submit {
+  background-color: #b8974a !important;
+  color: #0d1f3c !important;
+  border-radius: 9999px !important;
+  font-weight: 600 !important;
+  padding: 12px 24px !important;
+  font-size: 0.95rem !important;
+  white-space: nowrap !important;
+  cursor: pointer;
+}
+.hero-kit-submit:hover { background-color: #0d1f3c !important; color: #f0ead6 !important; }
+.hero-kit-form .formkit-alert-success {
+  background: #f0ead6 !important;
+  border: 1px solid rgba(184, 151, 74, 0.4) !important;
+  border-radius: 9999px !important;
+  color: #0d1f3c !important;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  padding: 12px 18px !important;
+  text-align: center;
+  margin: 0 !important;
+}
 .formkit-form[data-uid="8dd3c60131"] .formkit-alert-success {
   background: #f0ead6 !important;
   border: 1px solid rgba(184, 151, 74, 0.4) !important;

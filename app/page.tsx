@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SiteFooter from "./components/site-footer";
+import HeroOptInForm from "./components/hero-opt-in-form";
 
 export default function Home() {
   return (
@@ -17,12 +18,19 @@ export default function Home() {
               Urban to help you close the distance between belief and
               everyday life.
             </p>
-            <div className="mt-8">
+            <div className="mt-8 max-w-lg">
+              <p className="text-sm text-navy/60 mb-2">
+                Get the free Pattern Card — straight to your inbox.
+              </p>
+              <HeroOptInForm />
+            </div>
+            <div className="mt-4">
               <a
-                href="/free"
-                className="inline-flex items-center justify-center rounded-full bg-navy px-7 py-4 text-base font-medium text-cream shadow-sm hover:bg-gold hover:text-navy transition-colors"
+                href="/teaching"
+                className="inline-flex items-center gap-2 text-gold font-medium underline underline-offset-4 decoration-gold/50 decoration-2 hover:text-navy transition-colors"
               >
-                Get the Free Pattern Card
+                Watch Robin teach
+                <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
@@ -119,27 +127,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Free resource CTA */}
-      <section className="bg-gold/15 border-y border-gold/30">
-        <div className="mx-auto max-w-3xl px-6 py-20 sm:py-24 text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-navy">
-            Get the Free Pattern Card
-          </h2>
-          <p className="mt-4 text-lg text-navy/80 leading-relaxed max-w-xl mx-auto">
-            A simple printable card with the daily pattern Robin uses to
-            stay anchored in who God says she is. Download it free and
-            we&apos;ll send it straight to your inbox.
-          </p>
-          <div className="mt-10">
-            <a
-              href="/free"
-              className="inline-flex items-center justify-center rounded-full bg-navy px-8 py-4 text-base font-medium text-cream hover:bg-gold hover:text-navy transition-colors"
-            >
-              Get the Free Pattern Card
-            </a>
-          </div>
-        </div>
-      </section>
       </main>
       <SiteFooter />
     </>
