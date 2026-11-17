@@ -19,7 +19,7 @@ export default function TeachingPage() {
               Teaching
             </p>
             <h1 className="mt-1.5 font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-cream">
-              Walking in the New Man
+              He Is Always With You
             </h1>
             <p className="mt-2 text-sm sm:text-base text-[#b8c8d8] leading-relaxed max-w-2xl mx-auto">
               What does it actually look like to live as the new creation God

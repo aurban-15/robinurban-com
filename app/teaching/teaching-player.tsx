@@ -5,18 +5,18 @@ import Image from "next/image";
 
 const episodes = [
   {
-    id: "O1wGZyPnZMQ",
+    id: "CTNyJUdHCW8",
     number: 1,
-    title: "You Are a New Creation",
+    title: "The Promise Hidden in the Great Commission",
     description:
       "You are a new creation in Christ — not an improved version of the old you. But if that's true, why do we still struggle with the old man? Robin opens with the tension every believer faces and walks through the story of Cornelius in Acts 10 to reveal the pattern God designed for receiving grace.",
     scripture: "2 Corinthians 5:17 · Galatians 2:20 · Ephesians 2:8-9 · Acts 10",
     oneLiner: "The old man is crucified. So how do you walk in the new one?",
   },
   {
-    id: "nRh8INvZxlM",
+    id: "2nN_Yl68Ucw",
     number: 2,
-    title: "How Grace Actually Works",
+    title: "The Seared Conscience",
     description:
       "Grace isn't just a word — there's a pattern for how it operates. Robin walks through each step: hearing the Word, believing even when experience says otherwise, speaking life instead of death, and letting the Word do the work in you. The old covenant gave commandments to do. The new covenant gives words to believe.",
     scripture:
@@ -25,9 +25,9 @@ const episodes = [
       "Hear, believe, speak, receive — the pattern inside every promise.",
   },
   {
-    id: "Tvh4c05OdBM",
+    id: "hZY3HnusYn0",
     number: 3,
-    title: "What Jesus Already Did",
+    title: "The Love That Never Leaves",
     description:
       "Two rich men — one walked away sad, the other was changed from the inside out. Robin contrasts the rich young ruler with Zacchaeus to show the difference between an old covenant mindset and a new covenant heart. Then she walks through Isaiah 53, revealing everything Jesus exchanged at the cross.",
     scripture: "Luke 18:18-27 · Luke 19:1-10 · Isaiah 53:1-12",
@@ -113,6 +113,16 @@ export default function TeachingPlayer() {
             </button>
           ))}
         </div>
+        <p className="mt-6 text-center">
+          <a
+            href="https://www.youtube.com/@RobinUrban-w3s"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-navy font-medium underline underline-offset-4 decoration-gold/50 decoration-2 hover:text-gold transition-colors"
+          >
+            Watch more on YouTube <span aria-hidden="true">→</span>
+          </a>
+        </p>
       </section>
     </>
   );
