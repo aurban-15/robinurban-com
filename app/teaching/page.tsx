@@ -5,7 +5,7 @@ import TeachingPlayer from "./teaching-player";
 export const metadata: Metadata = {
   title: "Teaching",
   description:
-    "Watch Robin Urban teach on faith, grace, and walking in the new creation. Video teaching series from Foundation Stone Church in Toledo, Ohio.",
+    "Watch Robin Urban's series He Is Always With You — God's love that never leaves, even when we walk away. From Foundation Stone Church, Toledo, Ohio.",
 };
 
 export default function TeachingPage() {
