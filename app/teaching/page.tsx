@@ -22,9 +22,10 @@ export default function TeachingPage() {
               He Is Always With You
             </h1>
             <p className="mt-2 text-sm sm:text-base text-[#b8c8d8] leading-relaxed max-w-2xl mx-auto">
-              What does it actually look like to live as the new creation God
-              says you are? Robin Urban walks through the pattern Scripture
-              reveals for receiving grace — hear, believe, speak, receive.
+              God&apos;s love never leaves — even when we forget, resist, or walk
+              away. Robin Urban teaches on the promise hidden in the Great
+              Commission, what happens when we silence the Holy Spirit, and a
+              love never based on your performance.
               <span className="text-[#b8c8d8]/70"> — A three-part series from Foundation Stone Church, Toledo, Ohio.</span>
             </p>
           </div>

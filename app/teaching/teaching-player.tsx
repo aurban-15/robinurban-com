@@ -9,29 +9,28 @@ const episodes = [
     number: 1,
     title: "The Promise Hidden in the Great Commission",
     description:
-      "You are a new creation in Christ — not an improved version of the old you. But if that's true, why do we still struggle with the old man? Robin opens with the tension every believer faces and walks through the story of Cornelius in Acts 10 to reveal the pattern God designed for receiving grace.",
-    scripture: "2 Corinthians 5:17 · Galatians 2:20 · Ephesians 2:8-9 · Acts 10",
-    oneLiner: "The old man is crucified. So how do you walk in the new one?",
+      "Robin Urban teaches on the hidden promise in the Great Commission (Matthew 28) — and why \"I am with you always\" matters more than \"go and make disciples.\" A Bible teaching on the Holy Spirit, God's love that never leaves, and why He's not judging you on your performance.",
+    scripture: "Matthew 28:18–20 · John 14:16–18 · Hebrews 4:13 · Psalm 139:7–12",
+    oneLiner: "He's with you always — not because of your performance.",
   },
   {
     id: "2nN_Yl68Ucw",
     number: 2,
     title: "The Seared Conscience",
     description:
-      "Grace isn't just a word — there's a pattern for how it operates. Robin walks through each step: hearing the Word, believing even when experience says otherwise, speaking life instead of death, and letting the Word do the work in you. The old covenant gave commandments to do. The new covenant gives words to believe.",
-    scripture:
-      "Romans 10:17 · Mark 9:21-27 · Proverbs 18:21 · 1 Thessalonians 2:13",
+      "What is a seared conscience? In 1 Timothy 4, Paul warns that we can train ourselves to stop hearing the Holy Spirit. Robin Urban shares how she almost silenced that voice — and the night God stopped her with three words.",
+    scripture: "1 Timothy 4:1–2 · John 14:15",
     oneLiner:
-      "Hear, believe, speak, receive — the pattern inside every promise.",
+      "Silence His voice long enough, and you stop hearing it.",
   },
   {
     id: "hZY3HnusYn0",
     number: 3,
     title: "The Love That Never Leaves",
     description:
-      "Two rich men — one walked away sad, the other was changed from the inside out. Robin contrasts the rich young ruler with Zacchaeus to show the difference between an old covenant mindset and a new covenant heart. Then she walks through Isaiah 53, revealing everything Jesus exchanged at the cross.",
-    scripture: "Luke 18:18-27 · Luke 19:1-10 · Isaiah 53:1-12",
-    oneLiner: "Everything He bore, so you could walk free.",
+      "What do you do when you've grieved the Spirit, silenced the voice, and feel too far gone to come back? You draw near. Robin walks through the third reason we feel distant from God — the intent of our hearts — then turns to the remedy: James 4, Romans 8, and the moment in the garden when God asked Adam a question He already knew the answer to. \"Where are you?\" wasn't about location. It was about proximity. And then He covered them anyway.",
+    scripture: "Ephesians 4:25–32 · James 4:7–8 · Romans 8:35–39 · Genesis 3",
+    oneLiner: "\"Where are you?\" was never about location.",
   },
 ];
 
